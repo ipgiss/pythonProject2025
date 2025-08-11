@@ -2,7 +2,7 @@
 
 🇷🇺 **Русская версия**  
 Привет!  
-В этом репозитории собраны мои практические работы, решения задач и проекты с курса ["Тестирование ПО: Автоматизация и Программирование. Python.Selenium"](https://stepik.org/course/120491) на Степике.
+В этом репозитории собраны мои практические работы, решения задач и проекты с курса <a href="https://stepik.org/course/120491" target="_blank">"Тестирование ПО: Автоматизация и Программирование. Python.Selenium"</a> на Степике.
 
 **Основные темы курса:**
 - ⚙️ Автоматизация тестирования с Python
@@ -23,7 +23,7 @@
 
 🇬🇧 **English version**  
 Hello!  
-This repository contains my practical assignments, solutions, and projects from the ["Software Testing: Automation and Programming. Python.Selenium"](https://stepik.org/course/120491) course on Stepik.
+This repository contains my practical assignments, solutions, and projects from the <a href="https://stepik.org/course/120491" target="_blank">"Software Testing: Automation and Programming. Python.Selenium"</a> course on Stepik.
 
 **Key course topics:**
 - ⚙️ Test automation with Python
