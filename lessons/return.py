@@ -1,19 +1,26 @@
-import math
+# def sum_1(a,b):
+#     result = a + b
+#     print(f"Первая сумма равна {result}")
+#
+# sum_1(5,3)
+
+# def sum_1(a,b):
+#     result = a + b
+#     return result
+#
+# print(f"Первая сумма равна {sum_1(5, 3)}")
+
+def sum_1(a,b):
+    result = a + b
+    return result
+
+print(f"Первая сумма равна {sum_1(5, 3)}")
 
 
-def circutArea(radius):
-    return math.pi * radius ** 2
+def sum_2(c,d):
+    result = c + d
+    return result
 
+print(f"Вторая сумма равна {sum_2(8, 10)}")
 
-while True:
-    try:
-        r = int(input('Введите радиус: '))
-        # if r > 0:
-        break
-        # else:
-        #     print('Введите число больше 0')
-    except Exception as e:
-        print(f'Произошла ошибка {e}')
-
-area = circutArea(r)
-print(f'Площадь круга = {area:.2f}')
+print(f"Общая сумма равна {sum_1(5,3) + sum_2(8, 10)}")    # Сумма двух функций
