@@ -81,6 +81,42 @@
 # Функция logic() должна их отработать, если страна = Россия, то отрабатывает функция russia() и выводит на печать "Здравствуй <Имя>",
 # если страна = England, то отрабатывает функция england() и выводит на печать "Hello <Имя>".
 
+# def logic(name: str, country: str) -> None:
+#     if country == 'Россия':
+#         russia(name)
+#     elif country == 'England':
+#         england(name)
+#
+#
+# def russia(name: str) -> None:
+#     print(f'Здравствуй {name}')
+#
+#
+# def england(name: str) -> None:
+#     print(f'Hello {name}')
+#
+#
+# # Ввод данных
+# name = input()
+# country = input()
+#
+# logic(name, country) # запуск функции с двумя переменными
+
+# 7
+def russia(name):
+    with open('russia.txt', 'w', encoding='utf-8') as f:
+        f.write(name)
+    with open('russia.txt', 'r', encoding='utf-8') as f:
+        print(f.read())
+
+
+def england(name):
+    with open('england.txt', 'w', encoding='utf-8') as f:
+        f.write(name)
+    with open('england.txt', 'r', encoding='utf-8') as f:
+        print(f.read())
+
+
 def logic(name: str, country: str) -> None:
     if country == 'Россия':
         russia(name)
@@ -88,16 +124,7 @@ def logic(name: str, country: str) -> None:
         england(name)
 
 
-def russia(name: str) -> None:
-    print(f'Здравствуй {name}')
+user_name = input()
+user_country = input()
 
-
-def england(name: str) -> None:
-    print(f'Hello {name}')
-
-
-# Ввод данных
-name = input()
-country = input()
-
-logic(name, country) # запуск функции с двумя переменными
+logic(user_name, user_country)
