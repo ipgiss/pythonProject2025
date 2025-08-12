@@ -1,14 +1,3 @@
-# cats = ['Вася', 'Муся', 'Кот']
-#
-# print(cats)
-#
-# for i in cats:
-#     print(i)
-#
-# for ind, name in enumerate(cats, start=17):
-#     print(ind, name)
-
-
 class CountFromBy:
     def __init__(self, v: int = 0, i: int = 1) -> None:
         self.val = v
