@@ -103,28 +103,64 @@
 # logic(name, country) # запуск функции с двумя переменными
 
 # 7
-def russia(name):
-    with open('russia.txt', 'w', encoding='utf-8') as f:
-        f.write(name)
-    with open('russia.txt', 'r', encoding='utf-8') as f:
+# def russia(name):
+#     with open('russia.txt', 'w', encoding='utf-8') as f:
+#         f.write(name)
+#     with open('russia.txt', 'r', encoding='utf-8') as f:
+#         print(f.read())
+#
+#
+# def england(name):
+#     with open('england.txt', 'w', encoding='utf-8') as f:
+#         f.write(name)
+#     with open('england.txt', 'r', encoding='utf-8') as f:
+#         print(f.read())
+#
+#
+# def logic(name: str, country: str) -> None:
+#     if country == 'Россия':
+#         russia(name)
+#     elif country == 'England':
+#         england(name)
+#
+#
+# user_name = input()
+# user_country = input()
+#
+# logic(user_name, user_country)
+
+# 8
+'''Напишите функцию new_function(), которая принимает два значения в виде чисел. Первое - количество дней и оно может быть от 1 до 3,
+в противном случае выводит Bad. Второе - баланс на счете, не может быть меньше 30, в противном случае выводим Bad.
+Функция new_function() создает файл file.txt, затем производит списывание 7 рублей за каждый день и записывает в файл построчно строки,
+за каждый день списывания, по формату, далее вывести на печать содержимое файла:
+<Нумерация дня> день - баланс <Баланс> - списалось 7 - осталось <Баланс - Нумерация дня * 7>'''
+
+
+def new_function():
+    days = int(input())  # от 1 до 3
+    balance = int(input())  # не меньше 30
+
+    # проверка условий
+    if days < 1 or days > 3 or balance < 30:
+        print('Bad')
+        return  # Выходим из функции, если условие не выполнено
+
+    with open('file.txt', 'w', encoding='utf-8') as f:
+        for day in range(1, days + 1):  # Цикл по дням (1, 2, 3)
+            if balance < 7:
+                break
+            remain = balance - 7
+            # Формируем строку для каждого дня
+            line = f'{day} день - баланс {balance} - списалось 7 - осталось {remain}\n'
+            f.write(line)
+            balance = remain  # меняем исходную переменную баланса
+
+    with open('file.txt', 'r', encoding='utf-8') as f:
         print(f.read())
 
 
-def england(name):
-    with open('england.txt', 'w', encoding='utf-8') as f:
-        f.write(name)
-    with open('england.txt', 'r', encoding='utf-8') as f:
-        print(f.read())
+new_function()
 
-
-def logic(name: str, country: str) -> None:
-    if country == 'Россия':
-        russia(name)
-    elif country == 'England':
-        england(name)
-
-
-user_name = input()
-user_country = input()
-
-logic(user_name, user_country)
+# <Нумерация дня> день - баланс <Баланс> - списалось 7 - осталось <Баланс - Нумерация дня * 7>
+# 1 день - баланс 100 - списалось 7 - осталось 93
