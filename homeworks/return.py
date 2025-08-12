@@ -141,15 +141,15 @@ def new_function():
     days = int(input())  # от 1 до 3
     balance = int(input())  # не меньше 30
 
-    # проверка условий
+    # проверка условий задачи
     if days < 1 or days > 3 or balance < 30:
         print('Bad')
         return  # Выходим из функции, если условие не выполнено
 
     with open('file.txt', 'w', encoding='utf-8') as f:
         for day in range(1, days + 1):  # Цикл по дням (1, 2, 3)
-            if balance < 7:
-                break
+            # if balance < 7:
+            #     break
             remain = balance - 7
             # Формируем строку для каждого дня
             line = f'{day} день - баланс {balance} - списалось 7 - осталось {remain}\n'
