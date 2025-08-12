@@ -51,16 +51,53 @@
 # print(new_function())
 
 # 5
-def new_function():
-    parts = input().strip().split()
+# def new_function():
+#     parts = input().strip().split()
+#
+#     surname = parts[0]
+#     name = parts[1][0]
+#     ot4 = parts[2][0]
+#
+#     return f'{surname} {name}.{ot4}.'
+#
+# print(new_function())
 
-    surname = parts[0]
-    name = parts[1][0]
-    ot4 = parts[2][0]
+# 6
+# Напишите функцию new_function(), которая принимает два значения: строку - это Имя и число - это год рождения. Текущий год по дефолту 2024
+# Создайте код который выведет на печать "Меня зовут <Имя>, мне <возраст>."
+# def new_function():
+#     name = input()
+#     year = int(input())
+#     current_year = 2024
+#
+#     age = current_year - year
+#     print(f'Меня зовут {name}, мне {age}.')  # Меня зовут <Имя>, мне <возраст>.
+#
+#
+# new_function()
 
-    return f'{surname} {name}.{ot4}.'
+# 7
+# Напишите 3 функции: logic(), russia(), england(). Примите два значения в виде строк: первое - Имя, второе - Страна проживания.
+# Функция logic() должна их отработать, если страна = Россия, то отрабатывает функция russia() и выводит на печать "Здравствуй <Имя>",
+# если страна = England, то отрабатывает функция england() и выводит на печать "Hello <Имя>".
 
-print(new_function())
+def logic(name: str, country: str) -> None:
+    if country == 'Россия':
+        russia(name)
+    elif country == 'England':
+        england(name)
 
-#6
-# test new git push
+
+def russia(name: str) -> None:
+    print(f'Здравствуй {name}')
+
+
+def england(name: str) -> None:
+    print(f'Hello {name}')
+
+
+# Ввод данных
+name = input()
+country = input()
+
+logic(name, country) # запуск функции с двумя переменными
