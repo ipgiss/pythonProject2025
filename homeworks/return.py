@@ -61,3 +61,6 @@ def new_function():
     return f'{surname} {name}.{ot4}.'
 
 print(new_function())
+
+#6
+# test new git push
