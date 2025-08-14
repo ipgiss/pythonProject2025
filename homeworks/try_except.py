@@ -21,6 +21,8 @@ try:
     index = int(input())
     print(my_list[index])
 except IndexError:
-    print('Вы ввели больше чем надо индекс')
+    print('Индекс вне диапазона')
 except ValueError:
     print('Введите только число!')
+
+#3
