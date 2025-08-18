@@ -1,1 +1,3 @@
 another PC in this git project
+
+да, сработала синхронизация, все ок.
