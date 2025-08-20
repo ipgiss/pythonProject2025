@@ -17,7 +17,7 @@ class Car:
 
 
 # 4 Создаем Объекты (вне Класса)
-my_tesla = Car('Tsla Model S', 'white', 250)
+my_tesla = Car('Tesla Model S', 'white', 250)
 
 # 5. Вызов объектов через точку (.)
 print('---Моя Тесла---')
