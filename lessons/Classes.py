@@ -8,6 +8,3 @@ class Alphabet:
 
 
 russian = Alphabet('Russian', 'RU', 'абвгдеёжзийклмнопрстуфхцчшщъыьэюя')
-
-# test this Project to git sync.
-## yes, everythigs is working!
