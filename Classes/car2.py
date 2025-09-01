@@ -16,4 +16,4 @@ class Car:
 
 car1 = Car('Nissan X-trail', 2013, 2000, 1300000, 155000)
 car1.description()
-print(car1.mileage)
+# print(car1.mileage)
